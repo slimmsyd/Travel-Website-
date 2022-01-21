@@ -1,0 +1,328 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body { 
+    background:  #17181a;
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+    position: relative;
+}
+main { 
+    position: absolute;
+}
+
+
+#logo { 
+    color: white;
+    font-family: "Abril Fatace";
+}
+
+.nav { 
+    min-height: 10vh;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    width: 80%;
+    margin: auto;
+    padding: 2rem 0rem;
+}
+
+
+.line1,.line2 { 
+    width: 3rem;
+    height: 0.2rem;
+    margin: 0.4rem;
+    background-color: white;
+    pointer-events: none;
+}
+
+.slide {
+    min-height: 100vh;
+    margin: 0 auto 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #17181a;
+
+
+
+}
+
+.hero-img {
+    overflow: hidden;
+    position: relative;
+    flex: 1 ;
+    flex-basis: 25rem;
+
+}
+.hero-desc { 
+    display: flex;
+   flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-basis: 25rem;
+    padding-left: 5rem;
+    position: relative;
+    flex: 1;
+    padding-left: 5rem;
+}
+
+
+.hero-img img { 
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+
+.hero-desc h2 {
+    font-family: "Abril Fatface";
+    font-size: 5rem;
+}
+
+
+.hero-desc p { 
+    padding: 3rem 0rem;
+    color: rgb(223,223,223);
+}
+.explore { 
+    padding: 1rem 2rem;
+    background-color: none ;
+    color: white; 
+    border: 1px solid white; 
+    font-size: 1rem;
+    align-items: flex-start;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+.hike_Span {
+    color: rgb(167, 110, 231)
+}
+.mountain_Span { 
+    color: rgb(255, 139, 93)
+}
+.fashion_Span { 
+    color: rgb(255, 139, 93)
+}
+
+.nav-bar { 
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 1;
+    z-index: -1;
+    clip-path: circle(50px at 100% -10%);
+    -webkit-clip-path: circle(50px at 100% -10%)
+}
+.burger { 
+    cursor: pointer;
+}
+.nav-links {
+    font-size: 4rem;
+    flex-basis: 30rem;
+
+    
+}
+.nav-links h3 { 
+    font-size: 5rem;
+    padding: 3rem 0rem
+}
+
+
+.contact h2 { 
+    font-size: 5rem;
+    padding: 2rem 0rem;
+
+}
+.contact {
+    flex-basis: 30rem;
+}
+.contact p {
+    line-height:2rem ;
+    font-size: 1.5rem;
+}
+
+.reveal-img, .reveal-text { 
+    position: absolute;
+    width: 100%;
+    height: 105%;
+    background-color: #17181a;
+    left: 0;
+    top: 0;
+
+}
+
+.cursor { 
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid white;
+    position: absolute;
+    pointer-events: none;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease-in-out;
+    transition-property: background, transform;
+    transform-origin: 75% 75%;
+    z-index: 0;
+
+}
+
+.cursor.explore-active { 
+    background: white;
+    transform: scale(3);
+}
+
+.cursor.nav-active {
+background: rgb(86,124,228);
+  transform: scale(3);
+  z-index: -1;
+}
+
+.cursor-text { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.5rem;
+    color: #17181a;
+}
+.title { 
+    position: relative;
+    overflow: hidden;
+}
+.title-swipe { 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:  0;
+    left: 0 ;
+    transform: translateY(100%);
+    z-index: 1;
+    mix-blend-mode: darken;
+}
+.t-swipe1 { 
+    background-color: rgb(255, 139, 93);
+}
+.t-swipe2 { 
+    background-color: rgb(167, 110, 231);
+}
+.t-swipe3 { 
+    background-color: rgb(255, 139, 93);
+}
+
+
+.scrollmagic-pin-spacer{
+    position: static !important;
+}
+
+body.hide {
+    overflow: hidden;
+}
+
+
+/* OTHER PAGES */
+
+ .fashion1, .fashion2 {
+     min-height: 90vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 70%;
+     margin: auto;
+     color: white;
+     margin-top: 5rem;
+     flex-wrap: wrap;
+     position: relative;
+
+ }
+
+ .fashion-img { 
+     height:75vh;
+     flex-basis: 30rem;
+ }
+
+ .fashion-text {
+     flex: 1;
+     position: relative;
+     flex-basis: 25rem;
+ }
+
+ .fashion-img img { 
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+ }
+
+
+ .fashion-text h1 { 
+     font-size: 6rem;
+     padding: 5rem 0rem; 
+ }
+
+ .fashion1 h1 { 
+     color: rgb(255, 139, 93);
+ }
+
+ .fashion2 h1  {
+     color: rgb(167, 110, 231)
+ }
+
+ .fashion-text p { 
+     font-size: 2rem;
+     padding: 2rem 2rem 0rem 0rem;
+ }
+
+ .fashion-nr  {
+     font-size: 15rem;
+     position: absolute;
+     left: 55%;
+     top: 0%;
+     columns: #ffff;
+     opacity: 0.2;
+ }
+
+
+
+
+ .swipe {
+     position: fixed;
+     height: 100%;
+     width: 100%;
+     top: 0;
+     left: 0;
+    transform: translateX(-100%);
+     
+ }
+
+ .swipe1 { 
+     background: rgb(167, 110, 231);
+     z-index: 5;
+ }
+ .swipe2 { 
+     background: rgb(255, 139, 93);
+     z-index: 4;
+ }
+ .swipe3 { 
+     background: rgb(86,124,228);
+     z-index: 3;
+ }
+
+/* OTHER PAGES */
